@@ -1,0 +1,84 @@
+
+  .cylinder {
+    width: 150px;
+    height: 500px;
+    background-color: transparent;
+    border: 3px solid #333;
+    margin-right: 150px;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    transform: rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .cylinder::before,
+  .cylinder::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    left: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .cylinder::before {
+    top: -10px;
+    transform: rotateX(90deg);
+  }
+  
+  .cylinder::after {
+    bottom: -10px;
+    transform: rotateX(90deg);
+  }
+  
+  .cylinder-fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    transition: height 0.3s ease;
+  }
+
+  .fill-slider {
+    width: 200px;
+    margin-top: 20px;
+    appearance: none;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    border-radius: 10px;
+  }
+  
+  .fill-slider:hover {
+    opacity: 1;
+  }
+  
+  .fill-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .fill-percentage {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+
+    color: #a09d9d;
+  }
+  .remplissage{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }

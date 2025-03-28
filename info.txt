@@ -1,0 +1,20 @@
+tableau-de-bord/
+    node_modules/
+    public/
+    src/
+        assets/
+            react.svg
+            css/
+                App.css
+                index.css
+        App.jsx
+        index.css
+        main.jsx
+    index.html
+    .gitignore
+    eslint.config.js
+    package-lock.json
+    README.md 
+    vite.config.js 
+
+  

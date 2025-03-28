@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    background-color: #121212;
+    font-family: 'Digital', monospace;
+  }
+  
+  .digital-clock {
+    background-color: black;
+    color: #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    width: 200px;
+    /* height: 200px; */
+    font-size: 12px;
+  }
+  
+  .time-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .separator {
+    margin: 0 7px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .info-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .day-date .day {
+    margin-right: 10px;
+  }
+  
+  .temperature {
+    text-align: right;
+  }
